@@ -1,9 +1,11 @@
-<!-- Form to create a new cocktail
+<!-- Form to create a new cocktaila
  -->
 
 
 
 <%= simple_form_for @cocktail do |f| %>
   <%= f.input :name %>
+  <%= f.input :photo %>
+  <%= f.input :photo_cache, as: :hidden %>
   <%= f.submit "Add a cocktail", class: "btn btn-primary" %>
 <% end %>
